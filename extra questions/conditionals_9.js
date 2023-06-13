@@ -1,24 +1,13 @@
-//9. Write a program that checks if a given string is a valid password based on certain criteria (e.g., minimum length, inclusion of special characters).
+//9. Write a program that checks if a given
+// string is a valid password based on certain criteria (e.g., minimum length, inclusion of special characters).
+// min 8 chars and max 15
+// min one lowercase and 1 uppercase
+// no special char like #$%^& except @
 
-function isValidPassword(password){
-    var minLength = 8;
-    var specialChars = "@#_$&* ";
-    if(password.length < minLength){
-        return "false";
-    }
-     var hasSpecialChar = false;
-     for(i=0;i<password.length;i++){
-        var char=password[i];
-        if(specialChars.includes(char)){
-            hasSpecialChar=true;
-            break;
-        }
-    }
-        if(!hasSpecialChar){
-            return false;
-        }
-     return true;  //if all conditions met
-} 
+
+function isValidPassword(password) {
+
+}
 
 console.log(isValidPassword("samsung"));
 console.log(isValidPassword("samsung#"));
